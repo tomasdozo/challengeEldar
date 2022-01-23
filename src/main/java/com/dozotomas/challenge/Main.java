@@ -1,8 +1,6 @@
 package com.dozotomas.challenge;
 
-import com.dozotomas.challenge.brands.Amex;
 import com.dozotomas.challenge.model.Card;
-import com.dozotomas.challenge.brands.Nara;
 import com.dozotomas.challenge.utils.BrandEnums;
 import com.dozotomas.challenge.utils.Utils;
 
