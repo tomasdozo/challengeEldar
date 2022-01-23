@@ -1,7 +1,6 @@
-package com.dozotomas.challenge.model;
+package com.dozotomas.challenge.brands;
 
 import java.time.LocalDate;
-import java.util.Calendar;
 
 
 public class Amex extends Brand{
@@ -12,9 +11,9 @@ public class Amex extends Brand{
     }
 
     @Override
-    public float rate() {
+    public double rate() {
         LocalDate date = LocalDate.now();
-        return (float) date.getMonthValue() * 0.1f;
+        return (date.getMonthValue() * 0.1)/100;
     }
 
     public static Amex getInstance(){

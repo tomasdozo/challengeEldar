@@ -1,9 +1,6 @@
-package com.dozotomas.challenge.model;
-
-import org.apache.tomcat.jni.Local;
+package com.dozotomas.challenge.brands;
 
 import java.time.LocalDate;
-import java.util.Calendar;
 
 
 public class Nara extends Brand{
@@ -14,9 +11,9 @@ public class Nara extends Brand{
     }
 
     @Override
-    public float rate() {
+    public double rate() {
         LocalDate date= LocalDate.now();
-        return (float) date.getDayOfMonth() * 0.5f;
+        return  (date.getDayOfMonth() * 0.5)/100;
     }
 
     public static Nara getInstance(){

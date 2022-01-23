@@ -1,8 +1,6 @@
-package com.dozotomas.challenge.model;
+package com.dozotomas.challenge.brands;
 
 import java.time.LocalDate;
-import java.util.Calendar;
-
 
 public class Visa extends Brand{
     private static Visa instance = null;
@@ -12,9 +10,9 @@ public class Visa extends Brand{
     }
 
     @Override
-    public float rate() {
+    public double rate() {
         LocalDate date = LocalDate.now();
-        return (float) (date.getYear() % 100) / date.getMonthValue();
+        return  ((double) (date.getYear() % 100) / date.getMonthValue())/100;
     }
 
     public static Visa getInstance(){

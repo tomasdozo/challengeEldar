@@ -1,4 +1,4 @@
-package com.dozotomas.challenge.model;
+package com.dozotomas.challenge.brands;
 
 import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
@@ -11,7 +11,7 @@ import lombok.Setter;
 public abstract class Brand {
     private String name;
 
-    public abstract float rate();
+    public abstract double rate();
 
     @Override
     public String toString() {
